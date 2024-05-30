@@ -1,7 +1,8 @@
-import './bootstrap';
+// resources/js/app.js
 
-import Alpine from 'alpinejs';
+import Vue from 'vue';
+import App from './App.vue';
 
-window.Alpine = Alpine;
-
-Alpine.start();
+new Vue({
+    render: h => h(App)
+}).$mount('#app');
